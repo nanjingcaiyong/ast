@@ -1,0 +1,25 @@
+{
+  "name": "example1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "serve": "nodemon ./index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@babel/core": "^7.17.9",
+    "@babel/generator": "^7.17.0",
+    "@babel/parser": "^7.17.9",
+    "@babel/traverse": "^7.17.9",
+    "@babel/types": "^7.17.0",
+    "@vue/compiler-core": "^3.2.32",
+    "@vue/compiler-sfc": "^3.2.32",
+    "crypto": "^1.0.1",
+    "posthtml": "^0.16.6",
+    "prettier": "^2.6.2",
+    "semver": "^7.3.5"
+  }
+}

@@ -1,0 +1,156 @@
+{
+  "name": "fe-erp-supplier-portal",
+  "author": "WKlili",
+  "version": "1.0.0",
+  "description": "CUPSHE PLM",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve   & node server.js",
+    "serve:test": "vue-cli-service serve --mode test   & node server.js",
+    "dev": "vue-cli-service build --mode development",
+    "test": "vue-cli-service build --mode test",
+    "beta": "vue-cli-service build --mode beta",
+    "build:prod": "npm run  build",
+    "build:beta": "vue-cli-service build --mode beta",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "lint:fix": "vue-cli-service lint --fix",
+    "plop": "plop",
+    "deploy": "git add -A; git commit -m 'automated develop {DateStamp}'; git push deployment browse --force;"
+  },
+  "dependencies": {
+    "@antv/g2plot": "^2.3.15",
+    "@antv/g6": "^4.5.0",
+    "@antv/x6": "^1.28.1",
+    "@antv/x6-vue-shape": "^1.2.10",
+    "@cupshe/cupshe-root": "^0.0.2",
+    "@vue/composition-api": "^1.4.1",
+    "ali-oss": "^6.16.0",
+    "ant-design-vue": "^1.6.5",
+    "axios": "0.20.0",
+    "big.js": "^6.1.1",
+    "countup": "^1.8.2",
+    "cross-env": "^7.0.2",
+    "cupshe-axios": "^0.1.9",
+    "cupshe-css": "0.0.102",
+    "cupshe-dragWidth": "^0.0.18",
+    "cupshe-ga": "^0.0.3",
+    "cupshe-i18n": "^0.2.2",
+    "cupshe-utils": "^1.0.18",
+    "dayjs": "^1.8.10",
+    "fabric": "^4.5.0",
+    "jexcel": "^4.6.1",
+    "jspreadsheet-ce": "^4.7.3",
+    "jstat": "^1.9.4",
+    "lodash": "^4.17.20",
+    "moment": "^2.21.0",
+    "move-js": "^0.5.0",
+    "nprogress": "^0.2.0",
+    "pastedinput": "^1.0.0",
+    "prettier": "^2.5.1",
+    "qs": "^6.9.4",
+    "resize-observer-polyfill": "^1.5.1",
+    "store": "^2.0.12",
+    "v-calendar": "^2.3.4",
+    "view-image-cupshe": "^1.0.14",
+    "vue": "^2.6.12",
+    "vue-color": "^2.7.1",
+    "vue-meta": "^2.4.0",
+    "vue-photo-zoom-pro": "^1.4.3",
+    "vue-router": "2.7.0",
+    "vuedraggable": "^2.24.3",
+    "vuex": "^3.5.1"
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-optional-chaining": "^7.13.8",
+    "@vue/cli-plugin-babel": "4.5.6",
+    "@vue/cli-plugin-eslint": "4.5.6",
+    "@vue/cli-service": "4.5.6",
+    "@vue/eslint-config-standard": "5.1.2",
+    "antd-theme-webpack-plugin": "^1.2.0",
+    "babel-core": "7.0.0-bridge.0",
+    "babel-eslint": "^10.0.1",
+    "babel-plugin-transform-remove-console": "^6.9.4",
+    "compression-webpack-plugin": "^7.1.2",
+    "core-js": "^3.6.5",
+    "eslint": "^7.9.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-loader": "^4.0.2",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1",
+    "eslint-plugin-vue": "6.2.2",
+    "less": "^3.12.2",
+    "less-loader": "^7.0.1",
+    "plop": "^2.6.0",
+    "pre-commit": "^1.2.2",
+    "swagger-axios-codegen": "^0.11.10",
+    "terser-webpack-plugin": "^5.0.3",
+    "uglifyjs-webpack-plugin": "^2.2.0",
+    "vue-template-compiler": "^2.6.10"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/recommended",
+      "@vue/standard"
+    ],
+    "parserOptions": {
+      "parser": "babel-eslint"
+    },
+    "plugins": [
+      "vue"
+    ],
+    "rules": {
+      "camelcase": "off",
+      "vue/html-end-tags": "error",
+      "vue/require-default-prop": "error",
+      "vue/require-prop-types": "error",
+      "no-empty-function": "error",
+      "vue/html-closing-bracket-newline": [
+        "error",
+        {
+          "singleline": "never",
+          "multiline": "never"
+        }
+      ],
+      "vue/component-name-in-template-casing": [
+        "error",
+        "kebab-case",
+        {
+          "ignores": []
+        }
+      ],
+      "vue/no-parsing-error": [
+        2,
+        {
+          "x-invalid-namespace": false
+        }
+      ]
+    }
+  },
+  "prettier": {
+    "stylelintIntegration": true,
+    "eslintIntegration": true,
+    "singleQuote": true,
+    "semi": false,
+    "tabWidth": 2,
+    "endOfLine": "auto"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8"
+  ],
+  "postcss": {
+    "plugins": {
+      "autoprefixer": {}
+    }
+  },
+  "pre-commit": []
+}
